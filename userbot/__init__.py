@@ -202,8 +202,8 @@ async def check_botlog_chatid():
     entity = await bot.get_entity(BOTLOG_CHATID)
     if entity.default_banned_rights.send_messages:
         LOGS.info(
-            "Your account doesn't have rights to send messages to BOTLOG_CHATID "
-            "group. Check if you typed the Chat ID correctly.")
+            "Akun Anda tidak memiliki hak untuk mengirim pesan ke BOTLOG_CHATID"
+            "Group. Periksa apakah Anda mengetik Chat ID dengan benar.")
         quit(1)
 
 
