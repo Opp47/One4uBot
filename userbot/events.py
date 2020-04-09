@@ -74,7 +74,7 @@ def register(**args):
             try:
                 await func(check)
 
-            # Thanks to @kandnub for this HACK.
+            # Thanks to @Zack_Opp47 for this HACK.
             # Raise StopPropagation to Raise StopPropagation
             # This needed for AFK to working properly
 
@@ -93,17 +93,17 @@ def register(**args):
                     date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
                     text = "**USERBOT ERROR REPORT**\n"
-                    link = "[Userbot Indo Support](https://t.me/userbotindo)"
-                    text += "If you want to, you can report it"
-                    text += f". Head and forward this message to {link}.\n"
-                    text += "Nothing is logged except the fact of error and date\n"
+                    link = "[Userbot RT-ID Support](https://t.me/Republik_TelegramID)"
+                    text += "Jika Anda ingin, Anda dapat melaporkannya"
+                    text += f". Ingat dan teruskan pesan ini ke {link}.\n"
+                    text += "Tidak ada data yang sesuai kecuali kebenaran tentang kesalahan dan tanggal\n"
 
                     ftext = "========== DISCLAIMER =========="
-                    ftext += "\nThis file uploaded ONLY here,"
-                    ftext += "\nwe logged only fact of error and date,"
-                    ftext += "\nwe respect your privacy,"
-                    ftext += "\nyou may not report this error if you've"
-                    ftext += "\nany confidential data here, no one will see your data\n"
+                    ftext += "\nKami HANYA upload Berkas anda di sini,"
+                    ftext + = "\nData kami hanya fakta kesalahan dan tanggal,"
+                    ftext + = "\nkami menghormati privasi Anda,"
+                    ftext + = "\nJangan melaporkan kesalahan ini jika Anda sudah melakukannya"
+                    ftext + = "\nData rahasia di sini, tidak ada yang akan melihat data Anda\n""
                     ftext += "================================\n\n"
                     ftext += "--------BEGIN USERBOT TRACEBACK LOG--------\n"
                     ftext += "\nDate: " + date
@@ -136,8 +136,8 @@ def register(**args):
 
                     if LOGSPAMMER:
                         await check.client.respond(
-                            "`Sorry, my userbot has crashed.\
-                        \nThe error logs are stored in the userbot's log chat.`"
+                            "`Mohon maaf, Userbot ane lagi gila cuk.\
+                        \nLog error sudah di kirim ke logchat.`"
                         )
 
                     await check.client.send_file(send_to,
